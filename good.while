@@ -1,0 +1,13 @@
+program x :: 
+var a1, b1, c1 : int;
+{
+    a1 := 2;
+    b1:= 20;
+    c1 :=c1;
+    while (c1<b1)do{
+        c1 := c1 +a1;
+        b1 := b1 -a1;
+        a1 := a1;
+    }
+    endwh;
+}
