@@ -1,0 +1,2 @@
+all:
+	sml while.cm

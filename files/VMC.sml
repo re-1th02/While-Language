@@ -164,7 +164,7 @@ end;
 
 structure WHILE :
 sig val compile : string -> DataTypes.Program
-    val execute    : string -> (int FunStack.Stack * (int option) Array.array * DataTypes.UniversalDT FunStack.Stack)
+    val execute    : string -> (int option) Array.array 
 end = struct exception WHILEError;
 fun exit msg = let val _ = print(msg^"\n") in OS.Process.exit(OS.Process.success) end;
 fun pushlist [] l = l
@@ -196,8 +196,8 @@ fun compile (fileName) =
         |   assign ((a, b)::xs) l i= let val (x, y) = (push (a, b) l i) in (assign xs x y) end;
         val (lst, memLength) = (assign l [] 0);
         val _ = List.app SymbolTable.add lst;
-        val x = Vmc.rules(FunStack.create, (Array.array(memLength, NONE) : (int option) Array.array), (pushlist d FunStack.create))
+        val (V, M, C) = Vmc.rules(FunStack.create, (Array.array(memLength, NONE) : (int option) Array.array), (pushlist d FunStack.create))
     in
-        x
+        M
     end;
 end;

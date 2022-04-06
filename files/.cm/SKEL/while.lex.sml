@@ -1,0 +1,2 @@
+Skeleton 5
+ae"WHILELexFun"i2aä¢Tokens"gp1c"WHILE_TOKENS"f7d"Int"d"Char"Cä¢List"ä¢TextIO"ÿä¢Vector"d"Array"Nh3aä¢yyInput"jh3aä¢TIO"gp1ÿad"TSIO"gp2ÿ2d"StreamIO"ad"TPIO"gp1d"TextPrimIO"è0aä¢UserDeclarations"h3aä¢T"gp1ÿaä¢KeyWord"jÿ‚/ÿ‚/egp1ÿƒbbd2egp1ÿ‚2f6ÿƒCd"IO"ÿ=ÿ‚2ÿÿ$Nf0f1ÿ$
