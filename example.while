@@ -10,4 +10,5 @@ var a1, b1, c1 : int;
         a1 := a1;
     }
     endwh;
+    write a1+c1;
 }
